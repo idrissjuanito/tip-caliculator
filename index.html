@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  
+  <div class="container flex">
+    <h2><span>SPLI</span><span></span>TTER</h2>
+    <div class="tip-card flex">
+      <div class="left flex">
+        <div>
+          <h3>Bill</h3>
+          <div class="input-block flex">
+            <img src="images/icon-dollar.svg" alt="">
+              <input type="number" name="bill" id="bill" placeholder="0">
+          </div>
+        </div>
+        <div class="tip-percentage">
+          <h3>Select Tip %</h3>
+          <ul>
+            <li>5%</li>
+            <li>10%</li>
+            <li>15%</li>
+            <li>25%</li>
+            <li>50%</li>
+            <li class="custom">Custom</li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex people p-err">
+           <h3> Number of People</h3>           
+          </div>
+          <div class="input-block flex">
+            <img src="images/icon-person.svg" alt="">
+            <input type="number" name="people" id="people" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="right flex">
+        <div class="wrapper flex">
+          <div class="flex">
+            <div>
+              <h4>Tip Amount</h4>
+              <small>/ person</small>
+            </div>
+            <span class="tip-amount">$0.00</span>
+          </div>
+          <div class="flex">
+            <div>
+              <h4>Total</h4>
+              <small>/ person</small>
+            </div>
+            <span class="total-bill">$0.00</span>
+          </div>
+        </div>
+        <button class="btn-reset">RESET</button>
+      </div>
+
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="projuanito.com">Projuanito</a>.
+  </div>
+</body>
+</html>
